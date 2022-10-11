@@ -3,6 +3,17 @@ requires = ["flit_core >=3.2,<4"]
 build-backend = "flit_core.buildapi"
 
 [project]
-name = "lumache"
-authors = [{name = "Graziella", email = "graziella@lumache"}]
+name = "mock_docker_registry"
+authors = [{name = "Ian Neal", email = "wopr@wopr.tech"}]
 dynamic = ["version", "description"]
+dependencies = [
+    "pydantic >=1.10.2,<2",
+    "python-jose >=3.3.0,<4",
+    "multimethod>=1.9,<2",
+    "fastapi>=0.85.0,<1",
+    "PyYAML >=6.0,<7",
+]
+
+[project.urls]
+Homepage = "https://github.com/nealian/py-mock-docker-registry"
+Documentation = "https://py-mock-docker-registry.readthedocs.io/"
