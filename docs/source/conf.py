@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'mock_docker_registry'
+copyright = '2022 Ian Neal'
+author = 'Ian Neal'
 
 release = '0.1'
 version = '0.1.0'
