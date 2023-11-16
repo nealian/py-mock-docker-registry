@@ -162,11 +162,11 @@ class DockerImageReferenceParts:
             __|     # - Two underscores, or
             [-]*    # - Any number of dashes
           )         # are allowed to be in the middle
-          [a-z0-9]  # but must be trailed by one or more lowercase alphanumeric characters
+          [a-z0-9]+ # but must be trailed by one or more lowercase alphanumeric characters
         )*          # Any number of sets of these alphanumerics and "separators" are allowed.
       )             # We must have at least one "name component"
       (?:           # But we can have more, separated by slashes (but we can skip explaining it again)
-        [/][a-z0-9]+(?:(?:[._]|__|[-]*)[a-z0-9])*
+        [/][a-z0-9]+(?:(?:[._]|__|[-]*)[a-z0-9]+)*
       )*
     )
     """
